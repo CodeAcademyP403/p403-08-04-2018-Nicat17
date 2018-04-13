@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.slider{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/* Top */
+.slider .top{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+/* Slide */ 
+.slider .top .col-md-12{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+.slider .top .col-md-12 img{
+    width: 100%;
+    height: 500px;
+}
+
+.slider .top a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    background: rgb(59, 55, 55);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+.slider .top a i{
+    color: white;
+    font-size: 2em;
+}
+.slider .top a:first-child{
+    left: 3%;
+}
+.slider .top a:last-child{
+    right: 3%;   
+}
+
+
+/* Bottom */
+.slider .bottom{
+    margin-top: 10px;
+    width: 100%;
+}
+.slider .bottom div[class*="col"]:first-child{
+    padding-left: 0px;
+}
+.slider .bottom div[class*="col"]:last-child{
+    padding-right: 0px;
+}
+.slider .bottom img{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.slider .bottom img.active{
+    border: 4px solid greenyellow;
+}
+
+
