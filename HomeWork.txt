@@ -1,0 +1,47 @@
+1.Event-l?rd? Bubbling v? Capturing n?dir? 
+
+Bubbling - Elemente toxunduqda (eger varsa) onun valideyinlerine ardicil tesir eder. (body ve html xaric)
+
+Capturing - Elemente toxunduqda html teqinden baslayaraq hemin elemente qeder geler ve geri qayar. Yeni ardicil teqlere tesir eder.
+
+
+
+
+
+2.StopPropagation il? StopImmediatePropagation arasýnda f?rq n?dir?
+
+StopPropagation - bubble'in qarsisini alar;
+
+StopImmediatePropagation - StopPropagation'den ferqi ise eger verilen elementde 1-den cox hadise varsa onlardan yalniz birini ise salar.
+
+
+
+
+
+3.H?r hansý bir event handler funksiyasýnýn daxilind? yazýlmýþ event.target il? this arasýnda f?rq n?dir?
+
+event.target - bubble effekti yaratmaz.
+
+this - ise bubble effekti yaradar. (this --> currentTarget)
+
+
+
+
+
+
+4.event.preventDefault() n?dir?
+
+event.preventDefault() - eger secilmis elementde default olarag hadise varsa onun qarsisin alar.
+
+
+
+
+
+5.PageY, ScreenY v? ClientY arasýnda f?rq n?dir?
+
+ClientX and ClientY - Sehifenin koordinatlarin verir. Scroll olsa bele height 	nezere almaz.
+
+PageX and PageY - Scroll yaransa height da nezere alar. Yeni scroll'la asagi 		yense yuxarida gorsenmiyen height da uzerine geler.
+
+ScreenX and ScreenY - umumu ekrani nezere alar. (Komputerin umumu ekranina 	gore netice verer)
+
